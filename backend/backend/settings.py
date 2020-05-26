@@ -25,7 +25,7 @@ SECRET_KEY = '=tz-aq02b$4-tk3nd)r%dz#v)5tzkj$__emoq-e1=p+s!q3#g-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.129','localhost','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -123,12 +123,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-
-
-
-
-
-
-CORS_ORIGIN_WHITELIST = (
-         'localhost:3000/'
-     )
+CORS_ORIGIN_WHITELIST = [
+    'https://localhost:3000',
+]
